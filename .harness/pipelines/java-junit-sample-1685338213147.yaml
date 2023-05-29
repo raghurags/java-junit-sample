@@ -25,6 +25,13 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
+                  type: Run
+                  name: Run_2
+                  identifier: Run_2
+                  spec:
+                    shell: Sh
+                    command: mvn install -Dmaven.test.failure.ignore=true -DfailIfNoTests=false
+              - step:
                   type: RunTests
                   name: RunTests_1
                   identifier: RunTests_1
