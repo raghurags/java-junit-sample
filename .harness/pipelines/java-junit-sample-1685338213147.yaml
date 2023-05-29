@@ -45,3 +45,16 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+  notificationRules:
+    - name: email
+      identifier: email
+      pipelineEvents:
+        - type: PipelineSuccess
+        - type: PipelineFailed
+      notificationMethod:
+        type: Email
+        spec:
+          userGroups: []
+          recipients:
+            - raghu.h@ust.com
+      enabled: true
