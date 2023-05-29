@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_java_junit_sample_1685338221087
+  name: Build java-junit-sample
+  orgIdentifier: default
+  projectIdentifier: JavaUnittest
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1685005310089
+        repoName: raghurags/java-junit-sample
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
