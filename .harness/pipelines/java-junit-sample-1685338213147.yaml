@@ -32,6 +32,7 @@ pipeline:
                     language: Java
                     buildTool: Maven
                     args: clean test
+                    packages: com.sun.jndi.cosnaming
                     runOnlySelectedTests: true
                     reports:
                       type: JUnit
