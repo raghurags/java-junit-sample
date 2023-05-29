@@ -8,7 +8,7 @@ pipeline:
       codebase:
         build: <+input>
         connectorRef: account.Github_OAuth_1685005310089
-        repoName: raghurags/java-junit-sample
+        repoName: raghurags/junit-sample
   stages:
     - stage:
         identifier: build
