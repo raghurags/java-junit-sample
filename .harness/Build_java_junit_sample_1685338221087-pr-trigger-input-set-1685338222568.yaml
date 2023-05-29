@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_java_junit_sample_1685338221087-pr-trigger-input-set
+  identifier: Build_java_junit_sample_1685338221087prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: JavaUnittest
+  pipeline:
+    identifier: Build_java_junit_sample_1685338221087
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
