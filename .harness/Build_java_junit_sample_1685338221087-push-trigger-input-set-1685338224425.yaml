@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_java_junit_sample_1685338221087-push-trigger-input-set
+  identifier: Build_java_junit_sample_1685338221087pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: JavaUnittest
+  pipeline:
+    identifier: Build_java_junit_sample_1685338221087
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
